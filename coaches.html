@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koçlarımız</title>
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="card.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/6f6e08889e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="bg-color">
+      <div class="header" id="myHeader">
+        <a
+          href="#default"
+          class="logo"
+          onclick="window.location.href = 'index.html';"
+          >Zero Akademi <img src="images\ComfyUI_00067_v4.png" class="imglogo"
+        /></a>
+
+        <div class="header-right">
+          <a href="#home" onclick="window.location.href = 'index.html';"
+            >Ana Sayfa</a
+          >
+          <a
+            href="#coaches"
+            id="coaches"
+            onclick="window.location.href = 'coaches.html';"
+            >Koçlarımız</a
+          >
+
+          <a href="#faq" id="faq" onclick="window.location.href = 'faq.html';"
+            >SSS</a
+          >
+          <a
+            href="#contact"
+            id="contact"
+            onclick="window.location.href = 'contact.html';"
+            >İletişim</a
+          >
+
+          <a
+            href="#register"
+            id="register"
+            style="background: #1a1a1a; border-radius: 5px; font-weight: bold"
+            onclick="window.location.href = 'register.html';"
+            >Kayıt Ol</a
+          >
+        </div>
+      </div>
+      <div class="card-container">
+        <!-- card1 -->
+        <div class="profile-card" id="profile-card1">
+          <img
+            src="images\WhatsApp Image 2024-08-16 at 13.02.40.jpeg"
+            alt="image1"
+            class="profile-icon"
+            id="contactBtn1"
+            
+          />
+          <div class="profile-name">Çetin Demir</div>
+          <div class="profile-position" >Koç Üniversitesi <br> İşletme (Burslu)</div>
+          <div class="profile-position" style="font-weight: bold;">YKS 2024 Eşit Ağırlık 132'ncisi</div>
+          <a href="#" class="button open-button" id="infoBtn1" onclick=""
+            >Hakkında</a
+          >
+          
+        </div>
+
+        <div class="popup-card" id="popup-card1">
+          <h3>Hakkında</h3>
+          <p>
+            Selam, ben Çetin. YKS 2024'te eşit ağırlıkta 102. oldum ve şu an Koç Üniversitesi İşletme bölümüne yerleşmiş bulunmaktayım. Bu dereceyi mezun senemde elde ettim. Liseyi İstanbul Atatürk Fen Lisesi'nde okuyup ilk senemde sayısaldan sınava girdim fakat doğru düzgün çalıştığım söylenemezdi. Mezun senemde işi ciddiye alıp ne istediğime karar verdim ve eşit ağırlığa geçtim. Sayısaldan eşit ağırlığa geçmenin baskısı ve zorluğunu hissettiğim zamanlar oldu. Ama bu yorucu sürecin karşılığını istediğim başarıya ulaşarak aldım. Şimdi YKS sürecindeki çalışma ve psikolojik anlamdaki tecrübelerimi size aktarmanın zamanı geldi. Umarım birlikte çalışma fırsatımız olur :)
+          </p>
+          <button class="button" id="closeBtnPopup1" style="width: 100%">
+            Kapat
+          </button>
+        </div>
+
+        <div class="popup-card" id="contact-card1">
+          <h3>Sınav Sonucu</h3>
+          <img
+            src="images\WhatsApp Image 2024-08-16 at 13.02.34(1).jpeg"
+            alt="image1"
+            class="exam-result"
+          />
+          <button class="button" id="closeBtnContact1" style="width: 100%">
+            Kapat
+          </button>
+        </div>
+
+        
+
+        <!--  card3 -->
+        <div class="profile-card" id="profile-card3">
+          <img
+            src="images\WhatsApp Image 2024-08-16 at 01.18.11.jpeg"
+            alt="image1"
+            class="profile-icon"
+            style="
+              border: 1px solid #ddd;
+              padding: 5px;
+              background: #fff;
+              border-radius: 50%;
+              box-shadow: 0 1px 3px 0 rgba(75, 75, 75, 0.5);
+              animation: fadeInOnly 0.8s ease-in-out;
+            "
+            id="contactBtn3"
+          />
+          <div class="profile-name">Halis Can İnan</div>
+          <div class="profile-position" >Sabancı Üniversitesi <br> (Burslu)</div>
+          <div class="profile-position" style="font-weight: bold;">YKS 2024 Eşit Ağırlık 149'uncusu</div>
+          <a href="#" class="button open-button" id="infoBtn3" onclick=""
+            >Hakkında</a
+          >
+          
+        </div>
+
+        <div class="popup-card" id="popup-card3">
+          <h3>Hakkında</h3>
+          <p>
+            Selam,ben Halis Can.YKS 2024 eşit ağırlık alanında 149. oldum ve Sabancı Üniversitesi Yönetim Bilimleri fakültesine yerleştim.Bu dereceyi ilk sınav senemde özel ders almadan veya dershaneye gitmeden elde ettim.40 tyt neti ile başladığım bu yolu 103 tyt ile bitirdim.Sıfırdan başladığım bu yolculuk beni çok yordu ama hiç bir zaman pes etmedim.Her zaman kendime inandım.Hiç bir zaman çalışmayı elden bırakmadım.Bu süreçte tüm yolları deneyerek hepsini tecrübe ettim.En doğru olanı kendime buldum,çalıştım ve kazandım.Senin de disiplinli çalışman ve başarıya ulaşman için buradayım.Umarım beraber çalışma fırsatımız olur;)
+          </p>
+          <button class="button" id="closeBtnPopup3" style="width: 100%">
+            Kapat
+          </button>
+        </div>
+
+        <div class="popup-card" id="contact-card3">
+          <h3>Sınav Sonucu</h3>
+          <img
+            src="images\WhatsApp Image 2024-08-16 at 01.17.12.jpeg"
+            alt="image1"
+            class="exam-result"
+          />
+          <button class="button" id="closeBtnContact3" style="width: 100%">
+            Kapat
+          </button>
+        </div>
+
+        <!--  card4 -->
+        <div class="profile-card" id="profile-card4">
+          <img
+            src="images\WhatsApp Image 2024-08-16 at 00.42.09.jpeg"
+            alt="image1"
+            class="profile-icon"
+            id="contactBtn4"
+          />
+          <div class="profile-name">Zeynep Şaşmaz</div>
+          <div class="profile-position" >Sabancı Üniversitesi <br> (Burslu)</div>
+          <div class="profile-position" style="font-weight: bold;">YKS 2024 Eşit Ağırlık 371'incisi</div>
+          <a href="#" class="button open-button" id="infoBtn4" onclick=""
+            >Hakkında</a
+          >
+          
+        </div>
+
+        <div class="popup-card" id="popup-card4">
+          <h3>Hakkında</h3>
+          <p>
+            Merhaba ben Zeynep. YKS 2024’te eşit ağırlık alanında 314. oldum. 9-10'da hiç çalışmayıp 11'de çalışmaya başlayıp 12'de de çok sağlam tuttuğum bir lise hayatım oldu. Bu süreçte motivasyonumu yüksek tutabildim ve hep başaracağıma inandım. Kendime farklı programlar hazırlayıp bunlardan çok verim aldım sizlere de bu yöntemleri göstermeyi çok isterim. Umarım birlikte bu süreci götürme fırsatımız olurr :)
+          </p>
+          <button class="button" id="closeBtnPopup4" style="width: 100%">
+            Kapat
+          </button>
+        </div>
+
+        <div class="popup-card" id="contact-card4">
+          <h3>Sınav Sonucu</h3>
+          <img
+            src="images\WhatsApp Image 2024-08-16 at 20.22.52.jpeg"
+            alt="image1"
+            class="exam-result"
+          />
+          <button class="button" id="closeBtnContact4" style="width: 100%">
+            Kapat
+          </button>
+        </div>
+
+        <!--  card5 -->
+        <div class="profile-card" id="profile-card5">
+          <img
+            src="images\WhatsApp Image 2024-08-14 at 22.30.49.jpeg"
+            alt="image1"
+            class="profile-icon"
+            id="contactBtn5"
+          />
+          <div class="profile-name">Eren Ercan</div>
+          <div class="profile-position" >Sabancı Üniversitesi <br> (Burslu)</div>
+          <div class="profile-position" style="font-weight: bold;">YKS 2024 Sayısal 269'uncusu</div>
+          <a href="#" class="button open-button" id="infoBtn5" onclick=""
+            >Hakkında</a
+          >
+          
+        </div>
+
+        <div class="popup-card" id="popup-card5">
+          <h3>Hakkında</h3>
+          <p>
+            Selam, ben Eren Ercan. YKS 2024 sayısal alanda 269. oldum ve şu an Sabancı Üniversitesinde burslu olarak eğitim hayatımı sürdürüyorum. Bu dereceyi ilk sınav senemde elde ettim.<br>
+
+11'e geçerken okulun açılmasına az vakit kala birkaç gün içinde okul değiştirme kararı aldım ve Yaşar Acar Fen Lisesine naklimi gerçekleştirdim. Bu karar benim akademik olarak daha zorlu rakiplerin olduğu bir ortamda bulunmamı sağladı ve kendimi hep daha iyiye zorlamaya itti. YKS maratonu elbette kolay değildi netlerdeki dalgalanmalar, sosyal hayattaki değişimler psikolojimi oldukça zorladı fakat yılmadım, pes etmedim. Her şeyin üstesinden elimden geleni yaparak gelmeye çalıştım, psikolojimi yerinde tuttum. Stresimi yönetmeyi bildim ve en zor AYT sınavlarından biri olan 2024 AYT'yi fullemeyi başardım.<br> 
+
+11 ve 12'de çok değerli koçumla birlikte bu serüveni sürdürdüm ve ondan koçluk adında sayısız şey kaptım. Şimdiyse sırada tecrübelerimi sana aktarmak ve seni hayalindeki üniversiteye yerleştirmek var.
+          </p>
+          <button class="button" id="closeBtnPopup5" style="width: 100%">
+            Kapat
+          </button>
+        </div>
+
+        <div class="popup-card" id="contact-card5">
+          <h3>Sınav Sonucu</h3>
+          <img
+            src="images\WhatsApp Image 2024-08-14 at 22.30.47.jpeg"
+            alt="image1"
+            class="exam-result"
+          />
+          <button class="button" id="closeBtnContact5" style="width: 100%">
+            Kapat
+          </button>
+        </div>
+
+
+
+
+        <!--  card6 -->
+      <div class="profile-card" id="profile-card6">
+        <img
+          src="images\WhatsApp Image 2024-08-15 at 21.38.25.jpeg"
+          alt="image1"
+          class="profile-icon"
+          id="contactBtn6"
+        />
+        <div class="profile-name">Mehmet Ali İpek</div>
+          <div class="profile-position" >Boğaziçi Üniversitesi <br> Bilgisayar Mühendisliği</div>
+          <div class="profile-position" style="font-weight: bold;">YKS 2024 Sayısal 358'incisi</div>
+        <a href="#" class="button open-button" id="infoBtn6" onclick=""
+          >Hakkında</a
+        >
+        
+      </div>
+
+      <div class="popup-card" id="popup-card6">
+        <h3>Hakkında</h3>
+        <p>
+          Merhaba, ben Mehmet Ali. YKS 2024 sayısal alanda 358. oldum ve boğaziçi bilgisayar mühendisliğini tercih ettim. İlk senemde bu başarıyı elde ettim. 9’dan itibaren düzenli çalışmayı sürdürdüm son yıllardaysa daha çok sınav odaklı çalıştım. Zor bir süreç olmasına rağmen başarıyla atlattığımı düşünüyorum. Tabii bu süreçte neler yaptığımı, nasıl çalıştığımı sizlere aktarmak için ben de buradayım. Durumunuza göre bir yol çizip düzenli ve planlı şekilde ilerleyeceğimizi düşünüyorum
+        </p>
+        <button class="button" id="closeBtnPopup6" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+      <div class="popup-card" id="contact-card6">
+        <h3>Sınav Sonucu</h3>
+          <img
+            src="images\WhatsApp Image 2024-08-15 at 20.54.18.jpeg"
+            alt="image1"
+            class="exam-result"
+          />
+        <button class="button" id="closeBtnContact6" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+      <!--  card2 -->
+      <div class="profile-card" id="profile-card2">
+        <img
+        id="contactBtn2"
+          src="images\WhatsApp Image 2024-08-11 at 13.01.22(1).jpeg"
+          alt="image1"
+          class="profile-icon"
+        />
+        <div class="profile-name">Ali Kağan Yazağaç</div>
+        <div class="profile-position" >Boğaziçi Üniversitesi <br>Bilgisayar Mühendisliği</div>
+        <div class="profile-position" style="font-weight: bold;">YKS 2024 Sayısal 546'ncısı Dil 1377'ncisi</div>
+        <a href="#" class="button open-button" id="infoBtn2" onclick=""
+          >Hakkında</a
+        >
+        
+      </div>
+
+      <div class="popup-card" id="popup-card2">
+        <h3>Hakkında</h3>
+        <p>
+          Selam, ben Ali Kağan. Yaşar Acar Fen Lisesinden mezunum. YKS 2024'te sayısalda 546. dilde ise 1377. oldum. Bu sonucu ilk sınav senemde yaptım. Şu an Boğaziçi Üniversitesi Bilgisayar Mühendisliği bölümünde eğitim hayatıma devam ediyorum.<br>
+
+Lisenin başından itibaren çok olmasa da düzenli çalıştım. Özellikle 11 ve 12. sınıfta çalışma tempomu arttırıp biraz daha sınav odaklı çalışmaya başladım. Sınav süreci elbette kolay değildi. Sosyal hayatımın değişmesi, deneme sonuçlarımın değişkenliği gibi birçok zorlukla karşılaştım. Bu zorlukları elimden geldiğince aşmaya çalıştım ve dönüp baktığımda bunu başardığımı düşünüyorum. 
+
+<br>11. sınıftan itibaren bana çok şey katmış olan koçumla çalışmaya başladım. Ondan koçluk ve hayat tecrübesi konusunda çok şey öğrendiğimi düşünüyorum. Şimdi tecrübelerim ışığında sana yol göstermeyi ve senin hayalindeki üniversiteye yerleşmen için yardım etmek istiyorum.
+Umarım birlikte bu sınav yolculuğunu en iyi şekilde tamamlarız.
+        </p>
+        <button class="button" id="closeBtnPopup2" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+      <div class="popup-card" id="contact-card2">
+        <h3>Sınav Sonucu</h3>
+        <img
+          src="images\WhatsApp Image 2024-07-16 at 20.23.36.jpeg"
+          alt="image1"
+          class="exam-result"
+        />
+        <button class="button" id="closeBtnContact2" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+
+
+      <!--  card7 -->
+      <div class="profile-card" id="profile-card7">
+        <img
+          src="images\WhatsApp Image 2024-08-15 at 22.57.50.jpeg"
+          alt="image1"
+          class="profile-icon"
+          id="contactBtn7"
+        />
+        <div class="profile-name">Nazife İrem Dıraz</div>
+        <div class="profile-position" >Koç Üniversitesi <br>Bilgisayar Mühendisliği (Burslu)</div>
+        <div class="profile-position" style="font-weight: bold;">YKS 2024 TYT 3'üncüsü <br>Sayısal 1044'üncüsü</div>
+        <a href="#" class="button open-button" id="infoBtn7" onclick=""
+          >Hakkında</a
+        >
+      </div>
+
+      <div class="popup-card" id="popup-card7">
+        <h3>Hakkında</h3>
+        <p>
+          Merhaba ben İrem. Adana Fen Lisesinden bu yıl mezun oldum. 2024 YKS'de TYT'de Türkiye 3'üncüsü sayısalda ise 1044. oldum. Tübitak ek puanımla birlikte 100. olarak Koç Üniversitesi Bilgisayar Mühendisliğine burslu yerleştim. Bu sonucu sınava girdiğim ilk yıl dershaneye veya özel derse gitmeyerek elde ettim. Sonuç olarak ilk tercihim olan üniversiteye yerleştim. Umarım birlikte çalışırız :)
+        </p>
+        <button class="button" id="closeBtnPopup7" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+      <div class="popup-card" id="contact-card7">
+        <h3>Sınav Sonucu</h3>
+        <img
+          src="images\WhatsApp Image 2024-08-15 at 13.55.45.jpeg"
+          alt="image1"
+          class="exam-result"
+        />
+        <button class="button" id="closeBtnContact7" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+
+
+
+      <!--  card8 -->
+      <div class="profile-card" id="profile-card8">
+        <img
+          src="images\WhatsApp Image 2024-08-16 at 03.05.17.jpeg"
+          alt="image1"
+          class="profile-icon"
+          id="contactBtn8"
+        />
+        <div class="profile-name">Ensar Enes Durmuş</div>
+        <div class="profile-position" >İstanbul Üniversitesi Cerrahpaşa <br>Tıp (İngilizce)</div>
+        <div class="profile-position" style="font-weight: bold;">YKS 2024 Sayısal 1053'üncüsü</div>
+        <a href="#" class="button open-button" id="infoBtn8" onclick=""
+          >Hakkında</a
+        >
+        
+      </div>
+
+      <div class="popup-card" id="popup-card8">
+        <h3>Hakkında</h3>
+        <p>
+          Merhaba, ben Ensar Enes Durmuş. 2024 YKS sınavında sayısal alanda 1053. oldum ve Cerrahpaşa Tıp Fakültesine yerleştim. Amacım elde ettiğim bu başarıyı ve tecrübelerimi seninle paylaşıp hayalindeki üniversite ve bölüme yerleşmen. Ben yaptığım bu dereceyle özellikle "Yüzdelik dilimi düşük olan okula gidenler derece yapamaz (!)" kanısını yıktım. Hiçbir öğrencinin diğerinden farkı yok. Sadece kendine güven, hayal et, çalış ve dua et ;⁠) Ben 9 ve 10. sınıfta çalıştığım için tyt'yi halletmem zor olmadı. Ayt içinse sistemli ve düzenli çalışarak hallettim. 11'de dershaneye gitmedim 12'de dershane+koçluk aldım. Emin ol bu yolda güvendiğin bir koçla yürümek sana çok yardımcı olacak.
+Sana şimdiden kolaylıklar diliyorum inşallah birlikte çalışma fırsatımız olur.
+Aklına takılan veya sormak istediğin her şey için yazabilirsin...
+        </p>
+        <button class="button" id="closeBtnPopup8" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+      <div class="popup-card" id="contact-card8">
+        <h3>Sınav Sonucu</h3>
+        <img
+          src="images\WhatsApp Image 2024-08-16 at 03.06.40.jpeg"
+          alt="image1"
+          class="exam-result"
+        />
+        <button class="button" id="closeBtnContact8" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+
+      <!--  card13 -->
+      <div class="profile-card" id="profile-card13">
+        <img
+          src="images\WhatsApp Image 2024-08-15 at 21.12.42.jpeg"
+          alt="image1"
+          class="profile-icon"
+          id="contactBtn13"
+        />
+        <div class="profile-name" style="text-align: center;">Esma Gürbüz</div>
+        <div class="profile-position" >Hacettepe Üniversitesi<br> Tıp</div>
+        <div class="profile-position" style="font-weight: bold;">YKS 2024 Sayısal 1176'ncısı</div>
+        <a href="#" class="button open-button" id="infoBtn13" onclick=""
+          >Hakkında</a
+        >
+      </div>
+
+      <div class="popup-card" id="popup-card13">
+        <h3>Hakkında</h3>
+        <p>
+          Selam, ben Esma. YKS 2024 sayısal alanda 1176. oldum. Hacettepe Tıp Fakültesi’ne yerleştim. Bu sıralamayı ilk senemde yaptım. Benim 10.sınıftan beri bir şekilde sürdürdüğüm düzenli çalışma rutinim vardı son senemle de üzerine ekleyerek bu başarıyı elde ettim. Bu süreçte zaman zaman motivasyonumu kaybettiğim çok an olsa da hiç pes etmeyerek buraya kadar geldim. Sınav sürecimde hiç dershaneye gitmedim ya da koç desteği almadım. Kendime hazırladığım programlarla ilerledim. Bu programlara uydukça artan netlerim ve artan motivasyonum benim bu sıralamayı yapabilmemdeki en önemli etken oldu. Şimdi de kendim için uyguladığım çalışma düzenimi paylaşmak ve size sınavdan yeni çıkmış öğrenci gözüyle yardım etmek için buradayım.
+        </p>
+        <button class="button" id="closeBtnPopup13" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+      <div class="popup-card" id="contact-card13">
+        <h3>Sınav Sonucu</h3>
+        <img
+          src="images\WhatsApp Image 2024-08-15 at 21.12.07.jpeg"
+          alt="image1"
+          class="exam-result"
+        />
+        <button class="button" id="closeBtnContact13" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+
+
+
+
+
+
+      <!--  card9 -->
+      <div class="profile-card" id="profile-card9">
+        <img
+          src="images\WhatsApp Image 2024-08-15 at 22.32.41.jpeg"
+          alt="image1"
+          class="profile-icon"
+          id="contactBtn9"
+        />
+        <div class="profile-name">Sadık Yiğit Çınar</div>
+        <div class="profile-position" >Bezmi Alem Vakıf Üniversitesi<br>Tıp (Burslu)</div>
+        <div class="profile-position" style="font-weight: bold;">YKS 2024 Sayısal 5533'üncüsü</div>
+        <a href="#" class="button open-button" id="infoBtn9" onclick=""
+          >Hakkında</a
+        >
+        
+      </div>
+
+      <div class="popup-card" id="popup-card9">
+        <h3>Hakkında</h3>
+        <p>
+          Selamlar, ben Sadık Yiğit Çınar. YKS 2024 Sayısal 5533.süyüm 4 senelik lise hayatımı Şehit Münir Alkan Fen Lisesinde geçirdim ve buna ek olarak dershane için de Birebir Akademi’ye devam ettim. Bu yazıyı yazdığım sıralarda da Bezmialem Tıp Fakültesini burslu olarak kazanmış ve kayıt işleriyle uğraşıyorum. Son iki sene çok kaliteli ve işinin ehli bir hocadan koçluk aldım. Koç hocamdan ve gerek okulumun gerekse de dershanemin hocalarından çok önemli tecrübeler elde ettim. Bu tecrübeleri sizlerle paylaşmak ve gerek sınav döneminde gerekse de sınav anında yapmış olduğum hataları, yaşamış olduğum sıkıntıları sizler de yaşamayın diye sizlere destek olmak için hazırım. Hedefinize ulaşmanız için süreci sizinle beraber tasarlayıp hayallerinizdeki üniversiteye ulaşacağız.
+
+
+        </p>
+        <button class="button" id="closeBtnPopup9" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+      <div class="popup-card" id="contact-card9">
+        <h3>Sınav Sonucu</h3>
+        <img
+          src="images\WhatsApp Image 2024-08-15 at 15.05.22.jpeg"
+          alt="image1"
+          class="exam-result"
+        />
+        <button class="button" id="closeBtnContact9" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+
+
+
+      <!--  card10 -->
+      <div class="profile-card" id="profile-card10">
+        <img
+          src="images\454870679_800164585320174_6658472863138619526_n.jpg"
+          alt="image1"
+          class="profile-icon"
+          id="contactBtn10"
+        />
+        <div class="profile-name">Arda Tetik</div>
+        <div class="profile-position" >İstanbul Teknik Üniversitesi<br>Makine Mühendisliği</div>
+        <div class="profile-position" style="font-weight: bold;">YKS 2024 Sayısal 6851'üncüsü</div>
+        <a href="#" class="button open-button" id="infoBtn10" onclick=""
+          >Hakkında</a
+        >
+      </div>
+
+      <div class="popup-card" id="popup-card10">
+        <h3>Hakkında</h3>
+        <p>
+          Selamlar, ben Arda. Yaşar Acar Fen Lisesi mezunuyum. 2024 YKS sınavında 6851. oldum ve YKS sürecinin en başından beri hedefim olan İstanbul Teknik Üniversitesinde Makine Mühendisliği bölümüne yerleştim. Üniversiteye ilk sınavımda yerleştim. Ders çalışmaya 12. sınıfta başladım bir nevi arkadaşlarımdan ve çevremden çok daha geç başladım. Bu durum OBP'min de düşük olmasına yol açtı ve sınavda beni 1000 kişi geriye attı yani ham sıralamam 5800 idi. Tüm bu aksiliklere rağmen hedefim olan yere ulaştım ve kendime hiçbir şeyin imkansız olmadığını kanıtladım. Eğer beraber çalışma fırsatımız olursa bunu sana da kanıtlamak ve deneyimlerimi bu sürteçte edindiğim işine yarayacak tüm bilgileri seninle paylaşmak isterim. Umarım birlikte çalışma fırsatımız olur. İyi çalışmalarr.
+
+        </p>
+        <button class="button" id="closeBtnPopup10" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+      <div class="popup-card" id="contact-card10">
+        <h3>Sınav Sonucu</h3>
+        <img
+          src="images\WhatsApp Image 2024-08-16 at 20.10.03.jpeg"
+          alt="image1"
+          class="exam-result"
+        />
+        <button class="button" id="closeBtnContact10" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+
+
+
+
+
+
+      <!--  card11 -->
+      <div class="profile-card" id="profile-card11">
+        <img
+          src="images\WhatsApp Image 2024-08-16 at 13.17.52.jpeg"
+          alt="image1"
+          class="profile-icon"
+          id="contactBtn11"
+        />
+        <div class="profile-name" style="text-align: center;">İsmail Kerem Karademir</div>
+        <div class="profile-position" >Çanakkale Onsekiz Mart Üniversitesi<br>Tıp</div>
+        <div class="profile-position" style="font-weight: bold;">YKS 2024 Sayısal 13290'ıncısı</div>
+        <a href="#" class="button open-button" id="infoBtn11" onclick=""
+          >Hakkında</a
+        >
+      </div>
+
+      <div class="popup-card" id="popup-card11">
+        <h3>Hakkında</h3>
+        <p>
+          Selam arkadaşlar ben İsmail Kerem YKS'24 sınavında tyt 1552'ncisi sayısalda 13290'ıncıyım. Çanakkale Onsekiz Mart Üniversitesinde tıp 1. sınıf öğrencisiyim. İlk senemde gelen bu sonuç sonrası mezuna kalmadan devam etme kararı aldım. Çalışma serüvenime 11. sınıf 2. dönemde yaklaşık 60 tyt netiyle başladım sınavda 112.5 net ile bitirdim. Ayt sınavında sınav anı yönetiminden sıralama düşmüş olsada size YKS sürecinin ve dahi sınav anının bana kattıklarını anlatmak, size yardımcı olmak adına doğrularımı, yanlışlarımı size katmak isterim. Dilerim ki bu tecrübeleri aktarmak adına birlikte çalışırız.
+        </p>
+        <button class="button" id="closeBtnPopup11" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+      <div class="popup-card" id="contact-card11">
+        <h3>Sınav Sonucu</h3>
+        <img
+          src="images\WhatsApp Image 2024-08-16 at 13.17.51.jpeg"
+          alt="image1"
+          class="exam-result"
+        />
+        <button class="button" id="closeBtnContact11" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+
+      <!--  card12 -->
+      <div class="profile-card" id="profile-card12">
+        <img
+          src="images\WhatsApp Image 2024-08-15 at 12.26.16.jpeg"
+          alt="image1"
+          class="profile-icon"
+          id="contactBtn12"
+        />
+        <div class="profile-name" style="text-align: center;">Eren Günel</div>
+        <div class="profile-position" >İzmir Yüksek Teknoloji Enstitüsü<br> Elektronik ve Haberleşme Mühendisliği</div>
+        <div class="profile-position" style="font-weight: bold;">YKS 2024 Sayısal 16944'ıncısı</div>
+        <a href="#" class="button open-button" id="infoBtn12" onclick=""
+          >Hakkında</a
+        >
+      </div>
+
+      <div class="popup-card" id="popup-card12">
+        <h3>Hakkında</h3>
+        <p>
+          Selamlar, ben Eren Günel. Lisede Yaşar Acar Fen Lisesi'nde okudum ve YKS'de sayısalda 16944 sıralama yaparak İzmir Yüksek Teknoloji Enstitüsü Elektronik ve Haberleşme Mühendisliği bölümüne yerleştim. Sınava hazırlanmaya 11. sınıfta dershaneye giderek başladım ama yine de çok düzgün çalıştığım söylenemez. 12. sınıfta daha ciddi çalışmaya başladım ve bu sıralamayı elde ettim. Bu sıralamayı elde etmemde 11 ve 12. sınıfta aldığım koçluğun gerçekten büyük katkısı oldu. Tabi iş koçluktan çok sizde bitiyor. Örneğin ben daha düzgün çalışsam daha yüksek, daha fazla salsam daha kötü bir sıralama elde ederdim. Hedefim ilk 10 bin olsa da sıralamamdan memnunum. Sizlere tecrübelerimi aktarmak, yaptığım hataları, yaptığım doğruları anlatarak size yol göstermek isterim. Bu sınav gerçekten psikolojik olarak çok zorlu bir süreç ve bu süreçte size yardımcı olmak isterim. Ayrıca çalışmak kadar sınav anı da çok önemli ve o konuda da size yardımımın dokunabileceğini düşünüyorum. Tecrübelerimi size aktarmak için sabırsızlanıyorum. Umarım birlikte çalışma şansımız olur :)
+        </p>
+        <button class="button" id="closeBtnPopup12" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+      <div class="popup-card" id="contact-card12">
+        <h3>Sınav Sonucu</h3>
+        <img
+          src="images\WhatsApp Image 2024-08-15 at 10.49.09.jpeg"
+          alt="image1"
+          class="exam-result"
+        />
+        <button class="button" id="closeBtnContact12" style="width: 100%">
+          Kapat
+        </button>
+      </div>
+
+
+
+
+
+
+      </div>
+
+
+
+      
+    </div>
+    <div class="footer" style="margin-bottom: 0">
+      <a class="footertext" style="text-align: center; padding-top: 45px">
+        @2024 Zero Akademi. Tüm hakları saklıdır
+      </a>
+      <a
+        href="https://github.com/Neysde"
+        style="text-decoration: none; text-align: center"
+        class="footertext"
+        >Neysde was here
+      </a>
+    </div>
+    </div>
+  </body>
+</html>
