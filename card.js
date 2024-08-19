@@ -60,6 +60,7 @@ window.onload = function () {
   });
 
   closeBtnPopup1.addEventListener("click", () => {
+    contactBtn1.scrollIntoView();
     popup1.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -69,6 +70,7 @@ window.onload = function () {
   });
 
   closeBtnContact1.addEventListener("click", () => {
+    contactBtn1.scrollIntoView();
     contactCard1.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -104,6 +106,7 @@ window.onload = function () {
   });
 
   closeBtnPopup2.addEventListener("click", () => {
+    contactBtn2.scrollIntoView();
     popup2.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -113,6 +116,7 @@ window.onload = function () {
   });
 
   closeBtnContact2.addEventListener("click", () => {
+    contactBtn2.scrollIntoView();
     contactCard2.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -148,6 +152,7 @@ window.onload = function () {
   });
 
   closeBtnPopup3.addEventListener("click", () => {
+    contactBtn3.scrollIntoView();
     popup3.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -157,6 +162,7 @@ window.onload = function () {
   });
 
   closeBtnContact3.addEventListener("click", () => {
+    contactBtn3.scrollIntoView();
     contactCard3.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -192,6 +198,7 @@ window.onload = function () {
   });
 
   closeBtnPopup4.addEventListener("click", () => {
+    contactBtn4.scrollIntoView();
     popup4.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -201,6 +208,7 @@ window.onload = function () {
   });
 
   closeBtnContact4.addEventListener("click", () => {
+    contactBtn4.scrollIntoView();
     contactCard4.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -236,6 +244,7 @@ window.onload = function () {
   });
 
   closeBtnPopup5.addEventListener("click", () => {
+    contactBtn5.scrollIntoView();
     popup5.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -245,6 +254,7 @@ window.onload = function () {
   });
 
   closeBtnContact5.addEventListener("click", () => {
+    contactBtn5.scrollIntoView();
     contactCard5.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -280,6 +290,7 @@ window.onload = function () {
   });
 
   closeBtnPopup6.addEventListener("click", () => {
+    contactBtn6.scrollIntoView();
     popup6.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -289,6 +300,7 @@ window.onload = function () {
   });
 
   closeBtnContact6.addEventListener("click", () => {
+    contactBtn6.scrollIntoView();
     contactCard6.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -324,6 +336,7 @@ window.onload = function () {
   });
 
   closeBtnPopup7.addEventListener("click", () => {
+    contactBtn7.scrollIntoView();
     popup7.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -333,6 +346,7 @@ window.onload = function () {
   });
 
   closeBtnContact7.addEventListener("click", () => {
+    contactBtn7.scrollIntoView();
     contactCard7.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -368,6 +382,7 @@ window.onload = function () {
   });
 
   closeBtnPopup8.addEventListener("click", () => {
+    contactBtn8.scrollIntoView();
     popup8.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -377,6 +392,7 @@ window.onload = function () {
   });
 
   closeBtnContact8.addEventListener("click", () => {
+    contactBtn8.scrollIntoView();
     contactCard8.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -412,6 +428,7 @@ window.onload = function () {
   });
 
   closeBtnPopup9.addEventListener("click", () => {
+    contactBtn9.scrollIntoView();
     popup9.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -421,6 +438,7 @@ window.onload = function () {
   });
 
   closeBtnContact9.addEventListener("click", () => {
+    contactBtn9.scrollIntoView();
     contactCard9.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -456,6 +474,7 @@ window.onload = function () {
   });
 
   closeBtnPopup10.addEventListener("click", () => {
+    contactBtn10.scrollIntoView();
     popup10.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -465,6 +484,7 @@ window.onload = function () {
   });
 
   closeBtnContact10.addEventListener("click", () => {
+    contactBtn10.scrollIntoView();
     contactCard10.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -500,6 +520,7 @@ window.onload = function () {
   });
 
   closeBtnPopup11.addEventListener("click", () => {
+    contactBtn11.scrollIntoView();
     popup11.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -509,6 +530,7 @@ window.onload = function () {
   });
 
   closeBtnContact11.addEventListener("click", () => {
+    contactBtn11.scrollIntoView();
     contactCard11.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -545,6 +567,7 @@ window.onload = function () {
   });
 
   closeBtnPopup12.addEventListener("click", () => {
+    contactBtn12.scrollIntoView();
     popup12.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -554,6 +577,7 @@ window.onload = function () {
   });
 
   closeBtnContact12.addEventListener("click", () => {
+    contactBtn12.scrollIntoView();
     contactCard12.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -589,6 +613,7 @@ window.onload = function () {
   });
 
   closeBtnPopup13.addEventListener("click", () => {
+    contactBtn13.scrollIntoView();
     popup13.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
@@ -598,7 +623,146 @@ window.onload = function () {
   });
 
   closeBtnContact13.addEventListener("click", () => {
+    contactBtn13.scrollIntoView();
     contactCard13.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn14 = document.getElementById("infoBtn14");
+  const contactBtn14 = document.getElementById("contactBtn14");
+  const closeBtnPopup14 = document.getElementById("closeBtnPopup14");
+  const closeBtnContact14 = document.getElementById("closeBtnContact14");
+  const popup14 = document.getElementById("popup-card14");
+  const contactCard14 = document.getElementById("contact-card14");
+
+  infoBtn14.addEventListener("click", () => {
+    popup14.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn14.addEventListener("click", () => {
+    contactCard14.scrollIntoView();
+    contactCard14.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup14.addEventListener("click", () => {
+    contactBtn14.scrollIntoView();
+    popup14.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact14.addEventListener("click", () => {
+    contactBtn14.scrollIntoView();
+    contactCard14.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn15 = document.getElementById("infoBtn15");
+  const contactBtn15 = document.getElementById("contactBtn15");
+  const closeBtnPopup15 = document.getElementById("closeBtnPopup15");
+  const closeBtnContact15 = document.getElementById("closeBtnContact15");
+  const popup15 = document.getElementById("popup-card15");
+  const contactCard15 = document.getElementById("contact-card15");
+
+  infoBtn15.addEventListener("click", () => {
+    popup15.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn15.addEventListener("click", () => {
+    contactCard15.scrollIntoView();
+    contactCard15.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup15.addEventListener("click", () => {
+    contactBtn15.scrollIntoView();
+    popup15.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact15.addEventListener("click", () => {
+    contactBtn15.scrollIntoView();
+    contactCard15.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn16 = document.getElementById("infoBtn16");
+  const contactBtn16 = document.getElementById("contactBtn16");
+  const closeBtnPopup16 = document.getElementById("closeBtnPopup16");
+  const closeBtnContact16 = document.getElementById("closeBtnContact16");
+  const popup16 = document.getElementById("popup-card16");
+  const contactCard16 = document.getElementById("contact-card16");
+
+  infoBtn16.addEventListener("click", () => {
+    popup16.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn16.addEventListener("click", () => {
+    contactCard16.scrollIntoView();
+    contactCard16.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup16.addEventListener("click", () => {
+    contactBtn16.scrollIntoView();
+    popup16.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact16.addEventListener("click", () => {
+    contactBtn16.scrollIntoView();
+    contactCard16.classList.remove("open");
     document.getElementById("bg-color").classList.remove("bg-color");
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
