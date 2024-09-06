@@ -171,52 +171,6 @@ window.onload = function () {
     }
   });
 
-  const infoBtn4 = document.getElementById("infoBtn4");
-  const contactBtn4 = document.getElementById("contactBtn4");
-  const closeBtnPopup4 = document.getElementById("closeBtnPopup4");
-  const closeBtnContact4 = document.getElementById("closeBtnContact4");
-  const popup4 = document.getElementById("popup-card4");
-  const contactCard4 = document.getElementById("contact-card4");
-
-  infoBtn4.addEventListener("click", () => {
-    popup4.classList.add("open");
-    document.getElementById("bg-color").classList.add("bg-color");
-    var zindex = document.querySelectorAll(".profile-card");
-    for (var i = 0; i < zindex.length; i++) {
-      zindex[i].classList.add("profile-zindex");
-    }
-  });
-
-  contactBtn4.addEventListener("click", () => {
-    contactCard4.scrollIntoView();
-    contactCard4.classList.add("open");
-    document.getElementById("bg-color").classList.add("bg-color");
-    var zindex = document.querySelectorAll(".profile-card");
-    for (var i = 0; i < zindex.length; i++) {
-      zindex[i].classList.add("profile-zindex");
-    }
-  });
-
-  closeBtnPopup4.addEventListener("click", () => {
-    contactBtn4.scrollIntoView();
-    popup4.classList.remove("open");
-    document.getElementById("bg-color").classList.remove("bg-color");
-    var zindex = document.querySelectorAll(".profile-card");
-    for (var i = 0; i < zindex.length; i++) {
-      zindex[i].classList.remove("profile-zindex");
-    }
-  });
-
-  closeBtnContact4.addEventListener("click", () => {
-    contactBtn4.scrollIntoView();
-    contactCard4.classList.remove("open");
-    document.getElementById("bg-color").classList.remove("bg-color");
-    var zindex = document.querySelectorAll(".profile-card");
-    for (var i = 0; i < zindex.length; i++) {
-      zindex[i].classList.remove("profile-zindex");
-    }
-  });
-
   const infoBtn5 = document.getElementById("infoBtn5");
   const contactBtn5 = document.getElementById("contactBtn5");
   const closeBtnPopup5 = document.getElementById("closeBtnPopup5");
