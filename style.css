@@ -2,7 +2,8 @@
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-image: linear-gradient(to right, #000000, #e7312c, #e8711c);
+  /* background-image: linear-gradient(to right, #000000, #e7312c, #e8711c); */
+
   padding: 20px 10px;
   border-radius: 10px;
   position: sticky;
@@ -15,7 +16,7 @@
 /* Style the header links */
 .header a {
   float: left;
-  color: white;
+  color: black;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -57,10 +58,10 @@
 
 .imglogo {
   position: relative;
-  width: 25px;
-  height: 25px;
-  top: 5px;
-  padding-left: 5px;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+  margin-right: 5px;
 }
 
 .logo {
@@ -135,7 +136,7 @@
 }
 
 .body-container {
-  width: 60%;
+  width: 75%;
 }
 
 .zero-banner {
@@ -152,6 +153,10 @@
   .body-container {
     width: 100%;
   }
+
+  .zero-banner {
+    border-radius: 0;
+  }
 }
 
 /* footer */
@@ -160,8 +165,8 @@
   display: inline-block;
   margin-top: 100px;
   height: 150px;
-  background-image: linear-gradient(to right, #000000, #e7312c, #e8711c);
   width: 100%;
+  background-color: #eb926a;
 }
 
 .footertext {
@@ -176,11 +181,9 @@
 /* timer */
 
 #countdown {
-  background-color: #1a1a1a;
   margin-top: 20px;
   font-size: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 2px 0 black;
   text-align: center;
   padding: 25px;
   padding-top: 35px;
@@ -190,6 +193,7 @@
 #countdown h1 {
   margin-bottom: 25px;
   font-size: 38px;
+  color: #e7662b;
 }
 
 #countdown h3 {
@@ -197,20 +201,20 @@
   font-size: 25px;
   background: none;
   border-bottom: none;
-  color: white;
+  color: black;
   font-weight: bold;
   padding: none;
 }
 
 #countdown div {
-  color: white;
+  color: black;
   display: inline-block;
   margin: 0 15px;
   font-weight: 600;
 }
 
 #countdown div span {
-  color: #e8711c;
+  color: #e7662b;
 }
 
 @media screen and (max-width: 500px) {
@@ -251,19 +255,17 @@
 /* about */
 
 #about {
-  background-color: #1a1a1a;
   margin-top: 20px;
   font-size: 24px;
   border-radius: 10px;
-  box-shadow: 0 0 2px 0 black;
+
   padding: 40px;
-  color: white;
   line-height: 2.2rem;
 }
 
 #about div {
   font-weight: bold;
-  color: #e8711c;
+  color: #e7662b;
   font-size: 38px;
   animation: fadeInDown 0.4s ease-in-out;
 }
@@ -272,11 +274,12 @@
   text-decoration: none;
   margin-right: auto;
   margin-left: auto;
-  color: #e8711c;
+  color: #e7662b;
+
   font-size: 38px;
 }
 
 .about-button:hover {
-  color: #e7312c;
+  color: #dd2c00;
   transition: 0.3s;
 }
