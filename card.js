@@ -32,6 +32,128 @@ $(function () {
 //new cards js
 
 window.onload = function () {
+  //coach categories
+  let btnEa = document.getElementById("btnEa");
+  let btnMf = document.getElementById("btnMf");
+  let btnSoz = document.getElementById("btnSoz");
+  let btnAll = document.getElementById("btnAll");
+
+  let cards = document.getElementsByClassName("profile-card");
+
+  let profileCard1 = document.getElementById("profile-card1");
+  let profileCard3 = document.getElementById("profile-card3");
+  let profileCard14 = document.getElementById("profile-card14");
+  let profileCard15 = document.getElementById("profile-card15");
+  let profileCard16 = document.getElementById("profile-card16");
+  let profileCard5 = document.getElementById("profile-card5");
+  let profileCard6 = document.getElementById("profile-card6");
+  let profileCard2 = document.getElementById("profile-card2");
+  let profileCard7 = document.getElementById("profile-card7");
+  let profileCard8 = document.getElementById("profile-card8");
+  let profileCard13 = document.getElementById("profile-card13");
+  let profileCard9 = document.getElementById("profile-card9");
+  let profileCard10 = document.getElementById("profile-card10");
+  let profileCard11 = document.getElementById("profile-card11");
+  let profileCard12 = document.getElementById("profile-card12");
+  let profileCard17 = document.getElementById("profile-card17");
+  let profileCard21 = document.getElementById("profile-card21");
+  let profileCard22 = document.getElementById("profile-card22");
+  let profileCard24 = document.getElementById("profile-card24");
+  let profileCard18 = document.getElementById("profile-card18");
+  let profileCard19 = document.getElementById("profile-card19");
+  let profileCard20 = document.getElementById("profile-card20");
+  let profileCard25 = document.getElementById("profile-card25");
+  let profileCard23 = document.getElementById("profile-card23");
+
+  btnEa.addEventListener("click", () => {
+    profileCard1.classList.add("profile-card-display");
+    profileCard3.classList.add("profile-card-display");
+    profileCard14.classList.add("profile-card-display");
+    profileCard15.classList.add("profile-card-display");
+    profileCard16.classList.add("profile-card-display");
+    profileCard17.classList.add("profile-card-display");
+    profileCard21.classList.add("profile-card-display");
+    profileCard22.classList.add("profile-card-display");
+    profileCard24.classList.add("profile-card-display");
+    profileCard5.classList.remove("profile-card-display");
+    profileCard6.classList.remove("profile-card-display");
+    profileCard2.classList.remove("profile-card-display");
+    profileCard7.classList.remove("profile-card-display");
+    profileCard8.classList.remove("profile-card-display");
+    profileCard13.classList.remove("profile-card-display");
+    profileCard9.classList.remove("profile-card-display");
+    profileCard10.classList.remove("profile-card-display");
+    profileCard11.classList.remove("profile-card-display");
+    profileCard12.classList.remove("profile-card-display");
+    profileCard18.classList.remove("profile-card-display");
+    profileCard19.classList.remove("profile-card-display");
+    profileCard20.classList.remove("profile-card-display");
+    profileCard25.classList.remove("profile-card-display");
+    profileCard23.classList.remove("profile-card-display");
+  });
+
+  btnMf.addEventListener("click", () => {
+    profileCard5.classList.add("profile-card-display");
+    profileCard6.classList.add("profile-card-display");
+    profileCard2.classList.add("profile-card-display");
+    profileCard7.classList.add("profile-card-display");
+    profileCard8.classList.add("profile-card-display");
+    profileCard13.classList.add("profile-card-display");
+    profileCard9.classList.add("profile-card-display");
+    profileCard10.classList.add("profile-card-display");
+    profileCard11.classList.add("profile-card-display");
+    profileCard12.classList.add("profile-card-display");
+    profileCard18.classList.add("profile-card-display");
+    profileCard19.classList.add("profile-card-display");
+    profileCard20.classList.add("profile-card-display");
+    profileCard25.classList.add("profile-card-display");
+    profileCard1.classList.remove("profile-card-display");
+    profileCard3.classList.remove("profile-card-display");
+    profileCard14.classList.remove("profile-card-display");
+    profileCard15.classList.remove("profile-card-display");
+    profileCard16.classList.remove("profile-card-display");
+    profileCard17.classList.remove("profile-card-display");
+    profileCard21.classList.remove("profile-card-display");
+    profileCard22.classList.remove("profile-card-display");
+    profileCard24.classList.remove("profile-card-display");
+    profileCard23.classList.remove("profile-card-display");
+  });
+
+  btnSoz.addEventListener("click", () => {
+    profileCard5.classList.remove("profile-card-display");
+    profileCard6.classList.remove("profile-card-display");
+    profileCard2.classList.remove("profile-card-display");
+    profileCard7.classList.remove("profile-card-display");
+    profileCard8.classList.remove("profile-card-display");
+    profileCard13.classList.remove("profile-card-display");
+    profileCard9.classList.remove("profile-card-display");
+    profileCard10.classList.remove("profile-card-display");
+    profileCard11.classList.remove("profile-card-display");
+    profileCard12.classList.remove("profile-card-display");
+    profileCard18.classList.remove("profile-card-display");
+    profileCard19.classList.remove("profile-card-display");
+    profileCard20.classList.remove("profile-card-display");
+    profileCard25.classList.remove("profile-card-display");
+    profileCard1.classList.remove("profile-card-display");
+    profileCard3.classList.remove("profile-card-display");
+    profileCard14.classList.remove("profile-card-display");
+    profileCard15.classList.remove("profile-card-display");
+    profileCard16.classList.remove("profile-card-display");
+    profileCard17.classList.remove("profile-card-display");
+    profileCard21.classList.remove("profile-card-display");
+    profileCard22.classList.remove("profile-card-display");
+    profileCard24.classList.remove("profile-card-display");
+    profileCard23.classList.add("profile-card-display");
+  });
+
+  btnAll.addEventListener("click", () => {
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].classList.add("profile-card-display");
+    }
+    console.log("deneme");
+  });
+
+  //coach cards
   const infoBtn1 = document.getElementById("infoBtn1");
   const contactBtn1 = document.getElementById("contactBtn1");
   const closeBtnPopup1 = document.getElementById("closeBtnPopup1");
@@ -47,6 +169,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn1.addEventListener("click", () => {
@@ -56,6 +183,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -67,6 +199,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact1.addEventListener("click", () => {
@@ -76,6 +213,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -93,6 +235,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn2.addEventListener("click", () => {
@@ -102,6 +249,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -113,6 +265,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact2.addEventListener("click", () => {
@@ -122,6 +279,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -139,6 +301,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn3.addEventListener("click", () => {
@@ -148,6 +315,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -159,6 +331,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact3.addEventListener("click", () => {
@@ -168,6 +345,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -185,6 +367,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn5.addEventListener("click", () => {
@@ -194,6 +381,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -205,6 +397,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact5.addEventListener("click", () => {
@@ -214,6 +411,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -231,6 +433,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn6.addEventListener("click", () => {
@@ -240,6 +447,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -251,6 +463,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact6.addEventListener("click", () => {
@@ -260,6 +477,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -277,6 +499,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn7.addEventListener("click", () => {
@@ -286,6 +513,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -297,6 +529,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact7.addEventListener("click", () => {
@@ -306,6 +543,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -323,6 +565,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn8.addEventListener("click", () => {
@@ -333,6 +580,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   closeBtnPopup8.addEventListener("click", () => {
@@ -342,6 +594,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -369,6 +626,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn9.addEventListener("click", () => {
@@ -378,6 +640,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -389,6 +656,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact9.addEventListener("click", () => {
@@ -398,6 +670,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -415,6 +692,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn10.addEventListener("click", () => {
@@ -424,6 +706,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -435,6 +722,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact10.addEventListener("click", () => {
@@ -444,6 +736,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -461,6 +758,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn11.addEventListener("click", () => {
@@ -470,6 +772,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -481,6 +788,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact11.addEventListener("click", () => {
@@ -490,6 +802,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -507,6 +824,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn12.addEventListener("click", () => {
@@ -518,6 +840,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   closeBtnPopup12.addEventListener("click", () => {
@@ -528,6 +855,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact12.addEventListener("click", () => {
@@ -537,6 +869,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -554,6 +891,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn13.addEventListener("click", () => {
@@ -563,6 +905,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -574,6 +921,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact13.addEventListener("click", () => {
@@ -583,6 +935,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -600,6 +957,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn14.addEventListener("click", () => {
@@ -609,6 +971,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -620,6 +987,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact14.addEventListener("click", () => {
@@ -629,6 +1001,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -646,6 +1023,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn15.addEventListener("click", () => {
@@ -655,6 +1037,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -666,6 +1053,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact15.addEventListener("click", () => {
@@ -675,6 +1067,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 
@@ -692,6 +1089,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
   });
 
   contactBtn16.addEventListener("click", () => {
@@ -701,6 +1103,11 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
     }
   });
 
@@ -712,6 +1119,11 @@ window.onload = function () {
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
     }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
   });
 
   closeBtnContact16.addEventListener("click", () => {
@@ -721,6 +1133,604 @@ window.onload = function () {
     var zindex = document.querySelectorAll(".profile-card");
     for (var i = 0; i < zindex.length; i++) {
       zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn17 = document.getElementById("infoBtn17");
+  const contactBtn17 = document.getElementById("contactBtn17");
+  const closeBtnPopup17 = document.getElementById("closeBtnPopup17");
+  const closeBtnContact17 = document.getElementById("closeBtnContact17");
+  const popup17 = document.getElementById("popup-card17");
+  const contactCard17 = document.getElementById("contact-card17");
+
+  infoBtn17.addEventListener("click", () => {
+    popup17.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn17.addEventListener("click", () => {
+    contactCard17.scrollIntoView();
+    contactCard17.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup17.addEventListener("click", () => {
+    contactBtn17.scrollIntoView();
+    popup17.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact17.addEventListener("click", () => {
+    contactBtn17.scrollIntoView();
+    contactCard17.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn18 = document.getElementById("infoBtn18");
+  const contactBtn18 = document.getElementById("contactBtn18");
+  const closeBtnPopup18 = document.getElementById("closeBtnPopup18");
+  const closeBtnContact18 = document.getElementById("closeBtnContact18");
+  const popup18 = document.getElementById("popup-card18");
+  const contactCard18 = document.getElementById("contact-card18");
+
+  infoBtn18.addEventListener("click", () => {
+    popup18.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn18.addEventListener("click", () => {
+    contactCard18.scrollIntoView();
+    contactCard18.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup18.addEventListener("click", () => {
+    contactBtn18.scrollIntoView();
+    popup18.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact18.addEventListener("click", () => {
+    contactBtn18.scrollIntoView();
+    contactCard18.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn19 = document.getElementById("infoBtn19");
+  const contactBtn19 = document.getElementById("contactBtn19");
+  const closeBtnPopup19 = document.getElementById("closeBtnPopup19");
+  const closeBtnContact19 = document.getElementById("closeBtnContact19");
+  const popup19 = document.getElementById("popup-card19");
+  const contactCard19 = document.getElementById("contact-card19");
+
+  infoBtn19.addEventListener("click", () => {
+    popup19.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn19.addEventListener("click", () => {
+    contactCard19.scrollIntoView();
+    contactCard19.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup19.addEventListener("click", () => {
+    contactBtn19.scrollIntoView();
+    popup19.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact19.addEventListener("click", () => {
+    contactBtn19.scrollIntoView();
+    contactCard19.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn20 = document.getElementById("infoBtn20");
+  const contactBtn20 = document.getElementById("contactBtn20");
+  const closeBtnPopup20 = document.getElementById("closeBtnPopup20");
+  const closeBtnContact20 = document.getElementById("closeBtnContact20");
+  const popup20 = document.getElementById("popup-card20");
+  const contactCard20 = document.getElementById("contact-card20");
+
+  infoBtn20.addEventListener("click", () => {
+    popup20.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn20.addEventListener("click", () => {
+    contactCard20.scrollIntoView();
+    contactCard20.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup20.addEventListener("click", () => {
+    contactBtn20.scrollIntoView();
+    popup20.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact20.addEventListener("click", () => {
+    contactBtn20.scrollIntoView();
+    contactCard20.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn21 = document.getElementById("infoBtn21");
+  const contactBtn21 = document.getElementById("contactBtn21");
+  const closeBtnPopup21 = document.getElementById("closeBtnPopup21");
+  const closeBtnContact21 = document.getElementById("closeBtnContact21");
+  const popup21 = document.getElementById("popup-card21");
+  const contactCard21 = document.getElementById("contact-card21");
+
+  infoBtn21.addEventListener("click", () => {
+    popup21.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn21.addEventListener("click", () => {
+    contactCard21.scrollIntoView();
+    contactCard21.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup21.addEventListener("click", () => {
+    contactBtn21.scrollIntoView();
+    popup21.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact21.addEventListener("click", () => {
+    contactBtn21.scrollIntoView();
+    contactCard21.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn22 = document.getElementById("infoBtn22");
+  const contactBtn22 = document.getElementById("contactBtn22");
+  const closeBtnPopup22 = document.getElementById("closeBtnPopup22");
+  const closeBtnContact22 = document.getElementById("closeBtnContact22");
+  const popup22 = document.getElementById("popup-card22");
+  const contactCard22 = document.getElementById("contact-card22");
+
+  infoBtn22.addEventListener("click", () => {
+    popup22.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn22.addEventListener("click", () => {
+    contactCard22.scrollIntoView();
+    contactCard22.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup22.addEventListener("click", () => {
+    contactBtn22.scrollIntoView();
+    popup22.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact22.addEventListener("click", () => {
+    contactBtn22.scrollIntoView();
+    contactCard22.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn23 = document.getElementById("infoBtn23");
+  const contactBtn23 = document.getElementById("contactBtn23");
+  const closeBtnPopup23 = document.getElementById("closeBtnPopup23");
+  const closeBtnContact23 = document.getElementById("closeBtnContact23");
+  const popup23 = document.getElementById("popup-card23");
+  const contactCard23 = document.getElementById("contact-card23");
+
+  infoBtn23.addEventListener("click", () => {
+    popup23.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn23.addEventListener("click", () => {
+    contactCard23.scrollIntoView();
+    contactCard23.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup23.addEventListener("click", () => {
+    contactBtn23.scrollIntoView();
+    popup23.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact23.addEventListener("click", () => {
+    contactBtn23.scrollIntoView();
+    contactCard23.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn24 = document.getElementById("infoBtn24");
+  const contactBtn24 = document.getElementById("contactBtn24");
+  const closeBtnPopup24 = document.getElementById("closeBtnPopup24");
+  const closeBtnContact24 = document.getElementById("closeBtnContact24");
+  const popup24 = document.getElementById("popup-card24");
+  const contactCard24 = document.getElementById("contact-card24");
+
+  infoBtn24.addEventListener("click", () => {
+    popup24.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn24.addEventListener("click", () => {
+    contactCard24.scrollIntoView();
+    contactCard24.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup24.addEventListener("click", () => {
+    contactBtn24.scrollIntoView();
+    popup24.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact24.addEventListener("click", () => {
+    contactBtn24.scrollIntoView();
+    contactCard24.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  const infoBtn25 = document.getElementById("infoBtn25");
+  const contactBtn25 = document.getElementById("contactBtn25");
+  const closeBtnPopup25 = document.getElementById("closeBtnPopup25");
+  const closeBtnContact25 = document.getElementById("closeBtnContact25");
+  const popup25 = document.getElementById("popup-card25");
+  const contactCard25 = document.getElementById("contact-card25");
+
+  infoBtn25.addEventListener("click", () => {
+    popup25.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  contactBtn25.addEventListener("click", () => {
+    contactCard25.scrollIntoView();
+    contactCard25.classList.add("open");
+    document.getElementById("bg-color").classList.add("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.add("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.add("profile-zindex");
+    }
+  });
+
+  closeBtnPopup25.addEventListener("click", () => {
+    contactBtn25.scrollIntoView();
+    popup25.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
+    }
+  });
+
+  closeBtnContact25.addEventListener("click", () => {
+    contactBtn25.scrollIntoView();
+    contactCard25.classList.remove("open");
+    document.getElementById("bg-color").classList.remove("bg-color");
+    var zindex = document.querySelectorAll(".profile-card");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex[i].classList.remove("profile-zindex");
+    }
+
+    var zindex2 = document.querySelectorAll(".button");
+    for (var i = 0; i < zindex.length; i++) {
+      zindex2[i].classList.remove("profile-zindex");
     }
   });
 };

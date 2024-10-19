@@ -217,6 +217,13 @@
   color: #e7662b;
 }
 
+.price-title {
+  text-align: center;
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
 @media screen and (max-width: 500px) {
   #countdown h1 {
     font-size: 30px;
@@ -236,6 +243,16 @@
     font-size: 25px;
     line-height: 2rem;
   }
+
+  #price {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .price-title {
+    margin-top: 40px;
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -249,6 +266,11 @@
 
   #countdown div span {
     line-height: 2rem;
+  }
+
+  .price-title {
+    margin-top: 40px;
+    font-size: 30px;
   }
 }
 
@@ -282,4 +304,22 @@
 .about-button:hover {
   color: #dd2c00;
   transition: 0.3s;
+}
+
+/* price */
+
+#priceTitle {
+  color: white;
+  font-size: 45px;
+}
+
+#monthTitle {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#priceDesc {
+  text-align: center;
+  margin-top: 50px;
 }
